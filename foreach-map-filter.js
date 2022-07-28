@@ -200,7 +200,7 @@ function removeVowels(str) {
     const newArray = Array.from(str.toLowerCase());
     const noVowelArray = newArray.filter(function(val) {
         return !('aeiou'.includes(val));
-        // can I write the above line using indexOf ?
+        // return ‘aeiou’.indexOf(val) === -1 (** alternate method to produde same result as above)
     });
     return noVowelArray.join("");
 }
